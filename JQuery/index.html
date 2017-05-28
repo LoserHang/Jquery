@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>备忘录</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<div class="msg">
+    <span class="msg-content"></span>
+    <span class="anchor">知道了</span>
+</div>
+<div class="container">
+    <h1>备忘录</h1>
+    <form class="add-task">
+        <input name="content" type="text" autofocus autocomplete="off">
+        <button type="submit">submit</button>
+    </form>
+    <div class="task-list"></div>
+    <div class="task-detail-mask"></div>
+    <div class="task-detail"></div>
+</div>
+<video class="alerter" src="alert.mp3"></video>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.js"></script>
+<script src="node_modules/._store@2.0.4@store/dist/store.legacy.min.js"></script>
+<script src="js/base.js"></script>
+</body>
+</html>

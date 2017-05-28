@@ -1,0 +1,186 @@
+* {
+    /*background: rgba(0, 0, 0, 0.1);*/
+    box-sizing: border-box;
+    transition: background 0.2s;
+    outline: 0;
+}
+
+body {
+    background: #00484b;
+    color: #fff;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.task-list {
+    margin: 10px 0;
+}
+
+input, button, .task-item, .task-detail-mask, textarea {
+    padding: 10px;
+    border-radius: 3px;
+}
+
+input[type=text], input[type=date], textarea {
+    border: 0;
+    width: 100%;
+    display: block;
+    background: #ddd;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.fr {
+    float: right;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+textarea:hover,
+input[type=text]:hover,
+input[type=date]:hover,
+textarea:focus,
+input[type=text]:focus,
+input[type=date]:focus {
+    background: #eee;
+}
+
+button {
+    color: #333;
+    display: inline-block;
+    border: 0;
+    cursor: pointer;
+}
+
+.add-task input[type=text] {
+    float: left;
+    width: 84%;
+    margin-right: 1%;
+}
+
+button.primary,
+[type=submit] {
+    background: #46b1e4;
+}
+
+.add-task button[type=submit] {
+    background: #45b1e4;
+    width: 15%;
+}
+
+.add-task button[type=submit], .task-item {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.add-task button[type=submit]:hover {
+    background: #5fb9e4;
+}
+
+.task-item {
+    background: #fff;
+    color: #333;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.task-item:hover {
+    background: #ddd;
+}
+
+.task-item.completed {
+    color: #aaa;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.task-item.completed:after {
+    content: "";
+    height: 1px;
+    background: #aaa;
+    width: 96%;
+    position: relative;
+    top: -8px;
+    display: block;
+    float: right;
+}
+
+.task-detail {
+    overflow: auto;
+    width: 50%;
+    height: 100%;
+    color: #000;
+    background: #fff;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 3px 0 0 3px;
+}
+
+.task-detail .content {
+    padding: 10px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.task-detail .input-item {
+    margin-bottom: 10px;
+}
+
+.task-detail, .task-detail-mask {
+    position: absolute;
+    display: none;
+}
+
+.task-detail-mask {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(30, 30, 30, 0.6);
+    position: fixed;
+}
+
+.task-content {
+    margin-left: 10px;
+}
+
+.action-detail, .action-delete {
+    color: #888;
+    font-size: 90%;
+}
+
+.action-delete:hover,
+.action-detail:hover {
+    color: #333;
+}
+
+.msg {
+    display: none;
+    text-align: center;
+    background: #ffe264;
+    padding: 10px;
+    color: #333;
+}
+
+.anchor {
+    cursor: pointer;
+}
+
+.alerter {
+    width: 0;
+    height: 0;
+}
+
+.pop-title {
+    color: #333;
+}
